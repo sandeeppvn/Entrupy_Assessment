@@ -1,0 +1,8 @@
+Setup: create a python virtual environment ENV3 and install dependencies using:
+$ ENV3/bin/pip install -r requirements.txt
+
+Policy service:
+$ ENV3/bin/python policy_service/application.py 5050
+
+Simulator:
+$ ENV3/bin/python simulator/main.py 1 500 http://localhost:5050
