@@ -125,9 +125,13 @@ helper function: policy_service_request - From a json and route, makes a request
     - Implement more sophisticated scaling logic that takes into account the other collected data.
     - (Advanced) Use historical data to predict future trends and adjust the autoscaling policy accordingly.
 
+## Improve Job Submission Handling
+- Prioritize jobs based on the number of tasks, deadline and system load.
+- Implement a reject logic for jobs that cannot be accepted due to system constraints while ensuring no more than 5% of jobs are rejected.
+- (Advanced) Perform Batch Processing of jobs to optimize the system load. Aggregate similar jobs and process them together.
 
-
-# Base Trial
+## TRIALS
+### Base Trial
 vservers active: 4
 vservers removed: 0
 
