@@ -1,11 +1,10 @@
-import sys
-import uuid
-import random
 import collections
 import queue
+import random
+import sys
+import uuid
 
 import requests
-
 
 
 class Event(object):

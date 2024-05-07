@@ -146,3 +146,24 @@ Accepted: 97
 Rejected: 0
 Completed: 23
 Late: 96
+
+### Trial 1
+scale_up_threshold = 0.2
+scale_down_threshold = 0.05
+scale_up_late_jobs_threshold = 0.02
+scale_down_late_jobs_threshold = 0.01
+
+vservers active: 100
+vservers removed: 99
+
+Total charge: 41400
+Mean charge/tick: 82.8
+Mean vservers/tick: 66.15
+Mean charge/vserver-tick: 1.251700680272109
+
+Request statistics:
+Issued: 97
+Accepted: 97
+Rejected: 0
+Completed: 97
+Late: 18
