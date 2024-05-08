@@ -167,3 +167,30 @@ Accepted: 97
 Rejected: 0
 Completed: 97
 Late: 18
+
+
+current_vsserver_count = server_metrics['vserver_count']
+
+
+
+current_task_queue_size = server_metrics['task_queue_size']   +
+
+# Get the current job metrics
+current_completed_jobs = job_metrics['completed_jobs'] -
+current_late_jobs = job_metrics['late_jobs'] +
+current_total_jobs = job_metrics['total_jobs'] ~
+
+
+
+tick
+
+
+
+
+
+100 tasks
+
+15 ticks
+
+1 server : 60
+2: 120

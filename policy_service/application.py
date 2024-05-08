@@ -89,8 +89,8 @@ def route__policy__autoscaling():
     current_total_jobs = job_metrics['total_jobs']
 
     if current_total_jobs > 0:
-        queue_to_total_jobs_ratio = current_task_queue_size / current_total_jobs
-        late_to_total_jobs_ratio = current_late_jobs / current_total_jobs
+        queue_to_total_jobs_ratio = current_task_queue_size / (current_total_jobs - current_completed_jobs)
+        late_to_total_jobs_ratio = current_late_jobs / (current_total_jobs - current_completed_jobs)
     else:
         queue_to_total_jobs_ratio = 0
         late_to_total_jobs_ratio = 0
